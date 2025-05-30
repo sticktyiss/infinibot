@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Title";
+  src: url("https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+}
+#heroSection div {
+  background-color: grey;
+  height: 200px;
+  width: 200px;
+}
+
+/*# sourceMappingURL=homePage.css.map */
