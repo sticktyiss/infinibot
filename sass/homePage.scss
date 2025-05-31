@@ -1,38 +1,77 @@
 @use './sassModules/fonts';
 @use './sassModules/colors';
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@mixin fontTitle {
+  font-family: fonts.$fontTitle2;
+  font-weight: 700;
 }
-section { 
-  width: 100%;
+@mixin fontText {
+  font-family: fonts.$fontTitle;
+  font-weight: 300;
+}
+@mixin sectionBasicFlex($flexDir:row, $width:100%, $justify: center, $align:center) {
+  width: $width;
   display: flex;
-  justify-content: center;
-  > * {
-  max-width: 1440px;
-  }
+  flex-direction: $flexDir;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+main {
+  background-color: colors.$white;
 }
 #heroSection {
   background-color: colors.$blueLight;
   color: colors.$black;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include sectionBasicFlex(column);
   div {
     background-color: colors.$black;
     height: 15vw;
     width: 15vw;
-    margin: 4vh;
+    margin-bottom: 4vh;
     border-radius: 50%;
   }
-  font-family: fonts.$fontTitle2;
+  @include fontTitle;
   letter-spacing: .5em;
   h1 {
     font-size: 3vw;
-    margin: 2vh;
+    margin: 5vh;
+  }
+}
+nav {
+  @include sectionBasicFlex($width:20vw, $justify:space-evenly);
+  justify-self: flex-end;
+  position: sticky;
+  top: 5vh;
+  background-color: colors.$black;
+  padding: 1vh;
+  margin-top: 5vh;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  a {
+    color: colors.$blueLight;
+    @include fontTitle();
+    padding: 1vh;
+    font-size: 1vw;
+    text-decoration: none;
+  }
+  a:hover {
+    color: colors.$blueDark;
+  }
+}
+#intro {
+  margin: 10vh;
+  justify-content: space-between;
+  div {
+    width: 20vw;
+    height: 20vw;
+    background-color: colors.$black;
+  }
+  p {
+    width: 40%;
+    @include fontText();
+    font-size: 2vw;
   }
 }
