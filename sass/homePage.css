@@ -16,7 +16,8 @@ section > * {
 }
 
 #heroSection {
-  background-color: aqua;
+  background-color: #5CF1FF;
+  color: #3F403F;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,12 +27,15 @@ section > * {
   letter-spacing: 0.5em;
 }
 #heroSection div {
-  background-color: grey;
-  height: 200px;
-  width: 200px;
+  background-color: #3F403F;
+  height: 15vw;
+  width: 15vw;
+  margin: 4vh;
+  border-radius: 50%;
 }
 #heroSection h1 {
   font-size: 3vw;
+  margin: 2vh;
 }
 
 /*# sourceMappingURL=homePage.css.map */
