@@ -1,0 +1,35 @@
+@use './fonts';
+@use './colors';
+
+nav {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: flex-end;
+  position: sticky;
+  top: 5vh;
+  background-color: colors.$black;
+  padding: 1vh;
+  margin-top: 5vh;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  a {
+    color: colors.$blueLight;
+    font-family: fonts.$fontTitle2;
+    font-weight: 700;
+    padding: .4em .8em;
+    margin: 0 .2em;
+    font-size: 1vw;
+    text-decoration: none;
+    border-radius: 1.2em;
+    border: transparent .2em solid;
+    transition: border .2s ease, color .2s ease, background-color .2s ease;
+  }
+  a:hover {
+    color: colors.$blueDark;
+    background-color: colors.$blueLight;
+    border: colors.$blueDark .2em solid;
+  }
+}

@@ -1,6 +1,8 @@
 @use './sassModules/fonts';
 @use './sassModules/colors';
 
+@use './sassModules/navStyle';
+
 @mixin fontTitle {
   font-family: fonts.$fontTitle2;
   font-weight: 700;
@@ -38,27 +40,6 @@ main {
   h1 {
     font-size: 3vw;
     margin: 5vh;
-  }
-}
-nav {
-  @include sectionBasicFlex($width:20vw, $justify:space-evenly);
-  justify-self: flex-end;
-  position: sticky;
-  top: 5vh;
-  background-color: colors.$black;
-  padding: 1vh;
-  margin-top: 5vh;
-  border-top-left-radius: 2vw;
-  border-bottom-left-radius: 2vw;
-  a {
-    color: colors.$blueLight;
-    @include fontTitle();
-    padding: 1vh;
-    font-size: 1vw;
-    text-decoration: none;
-  }
-  a:hover {
-    color: colors.$blueDark;
   }
 }
 #intro {

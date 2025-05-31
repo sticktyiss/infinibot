@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+nav {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: flex-end;
+  position: sticky;
+  top: 5vh;
+  background-color: #3F403F;
+  padding: 1vh;
+  margin-top: 5vh;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+}
+nav a {
+  color: #5CF1FF;
+  font-family: "Victor Mono";
+  font-weight: 700;
+  padding: 0.4em 0.8em;
+  margin: 0 0.2em;
+  font-size: 1vw;
+  text-decoration: none;
+  border-radius: 1.2em;
+  border: transparent 0.2em solid;
+  transition: border 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+nav a:hover {
+  color: #00707A;
+  background-color: #5CF1FF;
+  border: #00707A 0.2em solid;
+}
+
 main {
   background-color: #F7F2F3;
 }
@@ -28,33 +61,6 @@ main {
 #heroSection h1 {
   font-size: 3vw;
   margin: 5vh;
-}
-
-nav {
-  width: 20vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  justify-self: flex-end;
-  position: sticky;
-  top: 5vh;
-  background-color: #3F403F;
-  padding: 1vh;
-  margin-top: 5vh;
-  border-top-left-radius: 2vw;
-  border-bottom-left-radius: 2vw;
-}
-nav a {
-  color: #5CF1FF;
-  font-family: "Victor Mono";
-  font-weight: 700;
-  padding: 1vh;
-  font-size: 1vw;
-  text-decoration: none;
-}
-nav a:hover {
-  color: #3F4ADE;
 }
 
 #intro {
