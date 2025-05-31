@@ -44,3 +44,30 @@ main {
     font-size: 2vw;
   }
 }
+.shapeDivider {
+  background-color: colors.$white;
+  height: 10vw;
+  clip-path: polygon(0 0, 0 5%, 100% 100%,  100% 0);
+}
+.gridLayout {
+  background-color: colors.$blueDark;
+  ul {
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 10vh auto;
+    @include sectionBasicFlex($justify:space-between, $align: flex-start);
+    width: 60%;
+    li {
+      width: 30%;
+      div {
+        width: 100%;
+        height: auto;
+        background-color: colors.$black;
+      }
+      p {
+        @include fontText();
+        font-size: 1vw;
+      }
+    }
+  }
+}

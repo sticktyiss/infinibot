@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 nav {
   justify-self: flex-end;
+  z-index: 1000;
   width: fit-content;
   display: flex;
   flex-direction: row;
@@ -83,6 +84,37 @@ main {
   font-family: "Hanuman";
   font-weight: 300;
   font-size: 2vw;
+}
+
+.shapeDivider {
+  background-color: #F7F2F3;
+  height: 10vw;
+  clip-path: polygon(0 0, 0 5%, 100% 100%, 100% 0);
+}
+
+.gridLayout {
+  background-color: #00707A;
+}
+.gridLayout ul {
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+}
+.gridLayout ul li {
+  width: 30%;
+}
+.gridLayout ul li div {
+  width: 100%;
+  height: auto;
+  background-color: #3F403F;
+}
+.gridLayout ul li p {
+  font-family: "Hanuman";
+  font-weight: 300;
+  font-size: 1vw;
 }
 
 /*# sourceMappingURL=homePage.css.map */
