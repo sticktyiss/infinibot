@@ -1,0 +1,18 @@
+@use './colors';
+@use './fonts';
+
+@mixin fontTitle {
+  font-family: fonts.$fontTitle2;
+  font-weight: 700;
+}
+@mixin fontText {
+  font-family: fonts.$fontTitle;
+  font-weight: 300;
+}
+@mixin sectionBasicFlex($flexDir:row, $justify: center, $align:center) {
+  display: flex;
+  flex-direction: $flexDir;
+  justify-content: $justify;
+  align-items: $align;
+}
+$borderRadius: 1vw;

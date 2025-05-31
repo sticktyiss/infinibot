@@ -1,22 +1,8 @@
 @use './sassModules/fonts';
 @use './sassModules/colors';
+@use './sassModules/mixins' as *;
 
 @use './sassModules/navStyle';
-
-@mixin fontTitle {
-  font-family: fonts.$fontTitle2;
-  font-weight: 700;
-}
-@mixin fontText {
-  font-family: fonts.$fontTitle;
-  font-weight: 300;
-}
-@mixin sectionBasicFlex($flexDir:row, $justify: center, $align:center) {
-  display: flex;
-  flex-direction: $flexDir;
-  justify-content: $justify;
-  align-items: $align;
-}
 
 main {
   background-color: colors.$white;
@@ -50,6 +36,7 @@ main {
     width: 20vw;
     height: 20vw;
     background-color: colors.$black;
+    border-radius: $borderRadius;
   }
   p {
     width: 40%;
