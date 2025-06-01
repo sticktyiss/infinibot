@@ -6,7 +6,6 @@ footer {
   @include sectionBasicFlex($flexDir: column, $justify: space-around);
   color: colors.$black;
   height: 80px;
-  width: 100vw;
   > a {
     background-color: colors.$black;
     color: colors.$white;
