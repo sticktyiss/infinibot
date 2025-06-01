@@ -52,7 +52,7 @@ nav {
   background-color: colors.$white;
   height: 10vw;
   clip-path: polygon(0 0, 0 5%, 100% 100%,  100% 0);
-  box-shadow: colors.$white 0px -1px 0px;
+  transform: translateY(-1px);
 }
 .gridLayout {
   background-color: colors.$blueDark;

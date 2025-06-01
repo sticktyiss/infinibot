@@ -129,7 +129,7 @@ nav {
   background-color: #F7F2F3;
   height: 10vw;
   clip-path: polygon(0 0, 0 5%, 100% 100%, 100% 0);
-  box-shadow: #F7F2F3 0px -1px 0px;
+  transform: translateY(-1px);
 }
 
 .gridLayout {
