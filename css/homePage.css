@@ -12,7 +12,6 @@ nav {
   top: 4vh;
   background-color: #3F403F;
   padding: 1vh;
-  margin-top: 4vh;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
 }
@@ -24,7 +23,6 @@ nav a {
   margin: 0 0.2em;
   font-size: 1vw;
   text-decoration: none;
-  letter-spacing: 0.1em;
   border-radius: 1.2em;
   border: transparent 0.2em solid;
   transition: border 0.2s ease, color 0.2s ease, background-color 0.2s ease;
@@ -52,6 +50,7 @@ footer > a {
   text-decoration: none;
   font-family: "Victor Mono";
   font-weight: 700;
+  letter-spacing: 0.05em;
   font-size: 0.8vw;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -86,6 +85,7 @@ main {
   align-items: center;
   font-family: "Victor Mono";
   font-weight: 700;
+  letter-spacing: 0.05em;
   letter-spacing: 0.5em;
 }
 #heroSection div {
@@ -98,6 +98,10 @@ main {
 #heroSection h1 {
   font-size: 3vw;
   margin: 5vh;
+}
+
+nav {
+  margin-top: 4vh;
 }
 
 #intro {
@@ -155,6 +159,7 @@ main {
 .gridLayout ul li h2 {
   font-family: "Victor Mono";
   font-weight: 700;
+  letter-spacing: 0.05em;
   font-size: 1.3vw;
   text-align: center;
   margin: 4vh 0;

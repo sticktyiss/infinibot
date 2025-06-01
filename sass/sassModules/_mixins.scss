@@ -4,6 +4,7 @@
 @mixin fontTitle {
   font-family: fonts.$fontTitle2;
   font-weight: 700;
+  letter-spacing: .05em;
 }
 @mixin fontText {
   font-family: fonts.$fontTitle;

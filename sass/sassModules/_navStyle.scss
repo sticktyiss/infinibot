@@ -13,7 +13,6 @@ nav {
   top: 4vh;
   background-color: colors.$black;
   padding: 1vh;
-  margin-top: 4vh;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
   a {
@@ -24,7 +23,6 @@ nav {
     margin: 0 .2em;
     font-size: 1vw;
     text-decoration: none;
-    letter-spacing: .1em;
     border-radius: 1.2em;
     border: transparent .2em solid;
     transition: border .2s ease, color .2s ease, background-color .2s ease;
