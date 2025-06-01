@@ -1,0 +1,33 @@
+@use './fonts';
+@use './colors';
+@use './mixins' as *;
+
+footer {
+  @include sectionBasicFlex($flexDir: column, $justify: space-around);
+  color: colors.$black;
+  height: 80px;
+  > a {
+    background-color: colors.$black;
+    color: colors.$white;
+    padding: .8em;
+    border-radius: $borderRadius;
+    text-decoration: none;
+    @include fontTitle;
+    font-size: .8vw;
+    transition: background-color .2s ease, color .2s ease;
+  }
+  > a:hover {
+    background-color: colors.$blueLight;
+    color: colors.$blueDark;
+  }
+  div {
+    color: colors.$black;
+    a {
+      color: colors.$black;
+      text-decoration: none;
+    }
+    a:hover {
+      color: colors.$blueLight;
+    }
+  }
+}

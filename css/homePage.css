@@ -35,6 +35,40 @@ nav a:hover {
   border: #00707A 0.2em solid;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #3F403F;
+  height: 80px;
+}
+footer > a {
+  background-color: #3F403F;
+  color: #F7F2F3;
+  padding: 0.8em;
+  border-radius: 1vw;
+  text-decoration: none;
+  font-family: "Victor Mono";
+  font-weight: 700;
+  font-size: 0.8vw;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+footer > a:hover {
+  background-color: #5CF1FF;
+  color: #00707A;
+}
+footer div {
+  color: #3F403F;
+}
+footer div a {
+  color: #3F403F;
+  text-decoration: none;
+}
+footer div a:hover {
+  color: #5CF1FF;
+}
+
 main {
   background-color: #F7F2F3;
 }

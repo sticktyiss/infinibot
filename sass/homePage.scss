@@ -3,6 +3,7 @@
 @use './sassModules/mixins' as *;
 
 @use './sassModules/navStyle';
+@use './sassModules/footer';
 
 main {
   background-color: colors.$white;
