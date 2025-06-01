@@ -1,7 +1,61 @@
 @use './sassModules/colors';
 @use './sassModules/fonts';
-@use './sassModules/mixins';
+@use './sassModules/mixins' as *;
 
 @use './sassModules/footer';
 @use './sassModules/header';
 @use './sassModules/navStyle';
+
+body {
+  background-color: colors.$white;
+}
+h1, h2, h3 {
+  @include fontTitle;
+}
+p {
+  @include fontText;
+}
+.intro {
+  height: 100vh;
+  @include sectionBasicFlex($flexDir: column);
+  h1 {
+    color: colors.$black;
+    font-size: 3vw;
+    margin-bottom: 10vh;
+  }
+  p {
+    background-color: colors.$black;
+    color: colors.$blueLight;
+    font-size: 1.5vw;
+    width: 60%;
+    padding: 1em 2em;
+    border-radius: $borderRadius;
+    text-align: center;
+  }
+}
+.feature-banner {
+  margin-top: 15vh;
+  background: colors.$blueDark;
+  transform: skewY(6deg);
+  padding: 4rem 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  .feature-track {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .feature {
+    font-size: 1vw;
+    opacity: 0;
+    transition: opacity 2s ease;
+  }
+
+  .feature.visible {
+    opacity: 1;
+  }
+}

@@ -1,24 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//   const dts = document.querySelectorAll('.accordion dt');
-//   let activeDD = null;
-
-//   dts.forEach(dt => {
-//     dt.addEventListener('click', () => {
-//       const dd = dt.nextElementSibling;
-
-//       if (dd === activeDD) {
-//         dd.classList.remove('open');
-//         activeDD = null;
-//       } else {
-//         if (activeDD) activeDD.classList.remove('open');
-//         dd.classList.add('open');
-//         activeDD = dd;
-//       }
-//     });
-//   });
-// });
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const dts = document.querySelectorAll('.accordion dt');
   let activeDD = null;
@@ -48,4 +27,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const features = document.querySelectorAll('.feature');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 200); // stagger effect
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 1 });
+
+  features.forEach(feature => observer.observe(feature));
 });
