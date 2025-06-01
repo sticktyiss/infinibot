@@ -9,10 +9,10 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   position: sticky;
-  top: 5vh;
+  top: 4vh;
   background-color: #3F403F;
   padding: 1vh;
-  margin-top: 5vh;
+  margin-top: 4vh;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
 }
@@ -68,6 +68,15 @@ footer div a {
 }
 footer div a:hover {
   color: #5CF1FF;
+}
+
+header div {
+  background-color: #3F403F;
+  width: 5vw;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 3vh;
+  left: 2vw;
 }
 
 /*# sourceMappingURL=about.css.map */

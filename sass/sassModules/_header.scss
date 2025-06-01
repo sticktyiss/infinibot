@@ -1,0 +1,13 @@
+@use './colors';
+@use './fonts';
+
+header {
+  div {
+    background-color: colors.$black;
+    width: 5vw;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+  }
+}
