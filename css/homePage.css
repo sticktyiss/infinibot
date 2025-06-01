@@ -75,7 +75,7 @@ main {
 }
 #intro div {
   width: 20vw;
-  height: 20vw;
+  aspect-ratio: 1/1;
   background-color: #3F403F;
   border-radius: 1vw;
 }
@@ -90,31 +90,42 @@ main {
   background-color: #F7F2F3;
   height: 10vw;
   clip-path: polygon(0 0, 0 5%, 100% 100%, 100% 0);
+  box-shadow: #F7F2F3 0px -1px 0px;
 }
 
 .gridLayout {
   background-color: #00707A;
+  height: fit-content;
 }
 .gridLayout ul {
-  margin: 10vh auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 60%;
+  width: 70%;
 }
 .gridLayout ul li {
+  margin: 15vh 0;
   width: 30%;
 }
 .gridLayout ul li div {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1/1;
   background-color: #3F403F;
+  border-radius: 1vw;
+}
+.gridLayout ul li h2 {
+  font-family: "Victor Mono";
+  font-weight: 700;
+  font-size: 1.3vw;
+  text-align: center;
+  margin: 2vh 0;
 }
 .gridLayout ul li p {
   font-family: "Hanuman";
   font-weight: 300;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 /*# sourceMappingURL=homePage.css.map */
