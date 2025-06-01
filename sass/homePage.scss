@@ -63,6 +63,7 @@ main {
     li {
       margin: 15vh 0;
       width: 30%;
+      color: colors.$white;
       div {
         width: 100%;
         aspect-ratio: 1/1;
@@ -73,7 +74,7 @@ main {
         @include fontTitle;
         font-size: 1.3vw;
         text-align: center;
-        margin: 2vh 0;
+        margin: 4vh 0;
       }
       p {
         @include fontText();

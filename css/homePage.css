@@ -108,6 +108,7 @@ main {
 .gridLayout ul li {
   margin: 15vh 0;
   width: 30%;
+  color: #F7F2F3;
 }
 .gridLayout ul li div {
   width: 100%;
@@ -120,7 +121,7 @@ main {
   font-weight: 700;
   font-size: 1.3vw;
   text-align: center;
-  margin: 2vh 0;
+  margin: 4vh 0;
 }
 .gridLayout ul li p {
   font-family: "Hanuman";
