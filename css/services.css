@@ -42,6 +42,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  z-index: 2000;
 }
 header div {
   background-color: #3F403F;
@@ -66,6 +67,7 @@ nav {
   border-bottom-left-radius: 2vw;
   border: solid #F7F2F3 0.2em;
   border-right: none;
+  z-index: 2000;
 }
 nav a {
   color: #5CF1FF;
@@ -125,9 +127,13 @@ p {
 
 .feature-banner {
   margin-top: 15vh;
-  background: #00707A;
-  transform: skewY(6deg);
-  padding: 4rem 0;
+  background: #5CF1FF;
+  color: #00707A;
+  transform: skewY(3deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vw;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -145,6 +151,17 @@ p {
 }
 .feature-banner .feature.visible {
   opacity: 1;
+}
+
+.shapeDivider {
+  height: 1vw;
+  background-color: #00707A;
+  transform: skewY(6deg);
+  margin: 1vw 0;
+}
+
+.listServices {
+  background-color: #00707A;
 }
 
 /*# sourceMappingURL=services.css.map */

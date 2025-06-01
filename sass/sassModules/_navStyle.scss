@@ -17,6 +17,7 @@ nav {
   border-bottom-left-radius: 2vw;
   border: solid colors.$white .2em;
   border-right: none;
+  z-index: 2000;
   a {
     color: colors.$blueLight;
     font-family: fonts.$fontTitle2;

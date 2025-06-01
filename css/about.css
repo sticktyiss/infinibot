@@ -16,6 +16,7 @@ nav {
   border-bottom-left-radius: 2vw;
   border: solid #F7F2F3 0.2em;
   border-right: none;
+  z-index: 2000;
 }
 nav a {
   color: #5CF1FF;
@@ -77,6 +78,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  z-index: 2000;
 }
 header div {
   background-color: #3F403F;
@@ -125,7 +127,7 @@ section > p {
 }
 
 #meetTheMind {
-  padding: 10vh 10%;
+  padding: 20vh 10%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -145,13 +147,14 @@ section > p {
   justify-content: space-evenly;
   align-items: center;
   height: fit-content;
-  height: 80vh;
+  height: 60vh;
 }
 #meetTheMind > div > img {
   background-color: #F7F2F3;
   width: 25%;
   aspect-ratio: 1/1;
   border-radius: 1vw;
+  z-index: 1;
 }
 #meetTheMind .accordion {
   width: 40%;

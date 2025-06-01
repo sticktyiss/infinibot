@@ -8,6 +8,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  z-index: 2000;
   div {
     background-color: colors.$black;
     width: 5vw;

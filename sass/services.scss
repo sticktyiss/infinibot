@@ -35,9 +35,14 @@ p {
 }
 .feature-banner {
   margin-top: 15vh;
-  background: colors.$blueDark;
-  transform: skewY(6deg);
-  padding: 4rem 0;
+  background: colors.$blueLight;
+  color: colors.$blueDark;
+  transform: skewY(3deg);
+  // padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vw;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -58,4 +63,15 @@ p {
   .feature.visible {
     opacity: 1;
   }
+}
+.shapeDivider {
+  height: 1vw;
+  background-color: colors.$blueDark;
+  transform: skewY(6deg);
+  margin: 1vw 0;
+  // clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.listServices {
+  background-color: colors.$blueDark;
+  // padding-top: 1vw;
 }

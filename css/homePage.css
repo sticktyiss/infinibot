@@ -16,6 +16,7 @@ nav {
   border-bottom-left-radius: 2vw;
   border: solid #F7F2F3 0.2em;
   border-right: none;
+  z-index: 2000;
 }
 nav a {
   color: #5CF1FF;

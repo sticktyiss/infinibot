@@ -35,7 +35,7 @@ section > p {
   color: colors.$blueDark;
 }
 #meetTheMind {
-  padding: 10vh 10%;
+  padding: 20vh 10%;
   margin-left: auto;
   margin-right: auto;
   @include sectionBasicFlex($flexDir: column);
@@ -48,12 +48,13 @@ section > p {
   > div {
     @include sectionBasicFlex($justify: space-evenly);
     height: fit-content;
-    height: 80vh;
+    height: 60vh;
     > img {
       background-color: colors.$white;
       width: 25%;
       aspect-ratio: 1/1;
       border-radius: $borderRadius;
+      z-index: 1;
     }
   }
   .accordion {
@@ -80,6 +81,7 @@ section > p {
     }
     dt.active .arrow {
       transform: rotate(-180deg);
+      
     }
     dd {
       color: colors.$black;
