@@ -8,6 +8,7 @@
 @mixin fontText {
   font-family: fonts.$fontTitle;
   font-weight: 300;
+  line-height: 1.2em;
 }
 @mixin sectionBasicFlex($flexDir:row, $justify: center, $align:center) {
   display: flex;

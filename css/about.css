@@ -79,4 +79,26 @@ header div {
   left: 2vw;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15vw;
+}
+section h1, section h2, section dt, section button {
+  font-family: "Victor Mono";
+  font-weight: 700;
+}
+section p, section dd {
+  font-family: "Hanuman";
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 3vw;
+  letter-spacing: 0.05em;
+}
+
 /*# sourceMappingURL=about.css.map */

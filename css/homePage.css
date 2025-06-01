@@ -118,6 +118,7 @@ main {
   width: 40%;
   font-family: "Hanuman";
   font-weight: 300;
+  line-height: 1.2em;
   font-size: 2vw;
 }
 
@@ -157,10 +158,12 @@ main {
   font-size: 1.3vw;
   text-align: center;
   margin: 4vh 0;
+  letter-spacing: 0.05em;
 }
 .gridLayout ul li p {
   font-family: "Hanuman";
   font-weight: 300;
+  line-height: 1.2em;
   font-size: 1.2vw;
 }
 

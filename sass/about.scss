@@ -1,7 +1,22 @@
 @use './sassModules/colors';
 @use './sassModules/fonts';
-@use './sassModules/mixins';
+@use './sassModules/mixins' as *;
 
 @use './sassModules/navStyle';
 @use './sassModules/footer';
 @use './sassModules/header';
+
+section {
+  @include sectionBasicFlex($flexDir: column);
+  padding: 0 15vw;
+  h1, h2, dt, button {
+    @include fontTitle;
+  }
+  p, dd {
+    @include fontText;
+  }
+}
+h1 {
+  font-size: 3vw;
+  letter-spacing: .05em;
+}
