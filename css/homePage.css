@@ -14,6 +14,8 @@ nav {
   padding: 1vh;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
+  border: solid #F7F2F3 0.2em;
+  border-right: none;
 }
 nav a {
   color: #5CF1FF;
