@@ -57,11 +57,13 @@ p {
   .feature {
     font-size: 1vw;
     opacity: 0;
-    transition: opacity 2s ease;
+    transform: translateY(-1vh) translateX(-1vw);
+    transition: opacity 2s ease, transform 2s ease;
   }
 
   .feature.visible {
     opacity: 1;
+    transform: translateX(0) translateY(0);
   }
 }
 .shapeDivider {
@@ -73,5 +75,48 @@ p {
 }
 .listServices {
   background-color: colors.$blueDark;
+  @include sectionBasicFlex($flexDir:column);
   // padding-top: 1vw;
+}
+.accordion {
+  width: 80%;
+  @include sectionBasicFlex($justify: space-evenly, $align: flex-start);
+  flex-wrap: wrap;
+  dt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: colors.$black;
+    background-color: colors.$blueLight;
+    padding: 1em;
+    border: 1px solid colors.$black;
+    font-size: 1.2vw;
+    cursor: pointer;
+    h3 { 
+      width: 87%;
+    }
+    .arrow {
+      width: 10%;
+      aspect-ratio: 1/1;
+      transition: transform .3s ease;
+    }
+    
+  }
+  dt.active .arrow {
+    transform: rotate(-180deg);
+    
+  }
+  dd {
+    color: colors.$black;
+    background-color: colors.$white;
+    font-size: 1vw;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: padding .3s ease, max-height .3s ease;
+  }
+  dd.open {
+    padding: 1em;
+    max-height: 50vh;
+  }
 }

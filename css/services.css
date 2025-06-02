@@ -147,10 +147,12 @@ p {
 .feature-banner .feature {
   font-size: 1vw;
   opacity: 0;
-  transition: opacity 2s ease;
+  transform: translateY(-1vh) translateX(-1vw);
+  transition: opacity 2s ease, transform 2s ease;
 }
 .feature-banner .feature.visible {
   opacity: 1;
+  transform: translateX(0) translateY(0);
 }
 
 .shapeDivider {
@@ -162,6 +164,54 @@ p {
 
 .listServices {
   background-color: #00707A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.accordion dt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3F403F;
+  background-color: #5CF1FF;
+  padding: 1em;
+  border: 1px solid #3F403F;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+.accordion dt h3 {
+  width: 87%;
+}
+.accordion dt .arrow {
+  width: 10%;
+  aspect-ratio: 1/1;
+  transition: transform 0.3s ease;
+}
+.accordion dt.active .arrow {
+  transform: rotate(-180deg);
+}
+.accordion dd {
+  color: #3F403F;
+  background-color: #F7F2F3;
+  font-size: 1vw;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: padding 0.3s ease, max-height 0.3s ease;
+}
+.accordion dd.open {
+  padding: 1em;
+  max-height: 50vh;
 }
 
 /*# sourceMappingURL=services.css.map */
