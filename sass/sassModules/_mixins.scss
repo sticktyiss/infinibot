@@ -18,3 +18,6 @@
   align-items: $align;
 }
 $borderRadius: 1vw;
+@mixin textShadow($color: colors.$black) {
+  text-shadow: $color .05em .1em;
+}

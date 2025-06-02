@@ -1,15 +1,17 @@
-@use './sassModules/colors';
-@use './sassModules/fonts';
-@use './sassModules/mixins' as *;
+@use "./sassModules/colors";
+@use "./sassModules/fonts";
+@use "./sassModules/mixins" as *;
 
-@use './sassModules/footer';
-@use './sassModules/header';
-@use './sassModules/navStyle';
+@use "./sassModules/footer";
+@use "./sassModules/header";
+@use "./sassModules/navStyle";
 
 body {
   background-color: colors.$white;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   @include fontTitle;
 }
 p {
@@ -75,8 +77,14 @@ p {
 }
 .listServices {
   background-color: colors.$blueDark;
-  @include sectionBasicFlex($flexDir:column);
+  @include sectionBasicFlex($flexDir: column);
   // padding-top: 1vw;
+  h2 {
+    font-size: 2vw;
+    margin: 10vh;
+    color: colors.$blueLight;
+    @include textShadow;
+  }
 }
 .accordion {
   width: 80%;
@@ -84,36 +92,46 @@ p {
   flex-wrap: wrap;
   dt {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 15vw;
+    aspect-ratio: 1/1;
     color: colors.$black;
     background-color: colors.$blueLight;
     padding: 1em;
     border: 1px solid colors.$black;
     font-size: 1.2vw;
     cursor: pointer;
-    h3 { 
-      width: 87%;
+    border-radius: $borderRadius;
+    border: none;
+    margin: 1vw;
+    h3 {
+      margin-top: 30%;
+      text-align: center;
+      line-height: 1.5em;
+      width: 70%;
     }
     .arrow {
-      width: 10%;
+      width: 2em;
       aspect-ratio: 1/1;
-      transition: transform .3s ease;
+      transition: transform 0.3s ease;
     }
-    
   }
   dt.active .arrow {
     transform: rotate(-180deg);
-    
   }
   dd {
+    margin: 1vw;
+    border-radius: $borderRadius;
+    transform: translateY(-1vh);
     color: colors.$black;
     background-color: colors.$white;
     font-size: 1vw;
     max-height: 0;
     padding: 0;
     overflow: hidden;
-    transition: padding .3s ease, max-height .3s ease;
+    transition: padding 0.3s ease, max-height 0.3s ease;
   }
   dd.open {
     padding: 1em;
