@@ -91,7 +91,9 @@ body {
   background-color: #F7F2F3;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Victor Mono";
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -169,6 +171,12 @@ p {
   justify-content: center;
   align-items: center;
 }
+.listServices h2 {
+  font-size: 2vw;
+  margin: 10vh;
+  color: #5CF1FF;
+  text-shadow: #3F403F 0.05em 0.1em;
+}
 
 .accordion {
   width: 80%;
@@ -180,20 +188,28 @@ p {
 }
 .accordion dt {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 15vw;
+  aspect-ratio: 1/1;
   color: #3F403F;
   background-color: #5CF1FF;
   padding: 1em;
   border: 1px solid #3F403F;
   font-size: 1.2vw;
   cursor: pointer;
+  border-radius: 1vw;
+  border: none;
 }
 .accordion dt h3 {
-  width: 87%;
+  margin-top: 30%;
+  text-align: center;
+  line-height: 1.5em;
+  width: 70%;
 }
 .accordion dt .arrow {
-  width: 10%;
+  width: 2em;
   aspect-ratio: 1/1;
   transition: transform 0.3s ease;
 }
@@ -201,6 +217,9 @@ p {
   transform: rotate(-180deg);
 }
 .accordion dd {
+  margin: 1vw;
+  border-radius: 1vw;
+  transform: translateY(-1vh);
   color: #3F403F;
   background-color: #F7F2F3;
   font-size: 1vw;
