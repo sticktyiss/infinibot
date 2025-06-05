@@ -107,6 +107,9 @@ p {
     border-radius: $borderRadius;
     border: none;
     // margin: 1vw;
+    transform: translateY(0);
+    box-shadow: colors.$black 1em 1em;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
     h3 {
       margin-top: 30%;
       text-align: center;
@@ -119,13 +122,17 @@ p {
       transition: transform 0.3s ease;
     }
   }
+  dt.active {
+    box-shadow: colors.$black 1em 2em;
+    transform: translateY(-1em);
+  }
   dt.active .arrow {
     transform: rotate(-180deg);
   }
   dd {
     // margin: 1vw;
     position: absolute;
-    transform: translateX(-7.25vw);
+    transform: translateX(-7.25vw) translateY(.85vw);
     width: 30vw;
     border-radius: $borderRadius;
     // transform: translateY(-1vh);
@@ -135,7 +142,8 @@ p {
     max-height: 0;
     padding: 0;
     overflow: hidden;
-    transition: padding 0.3s ease, max-height 0.3s ease;
+    transition: padding 0.3s ease, max-height 0.3s ease, box-shadow .3s ease;
+    z-index: 1000;
     p {
       font-weight: 500;
       span {
@@ -148,6 +156,7 @@ p {
     }
   }
   dd.open {
+    box-shadow: colors.$blueDark 0em 0 0 .25em, colors.$black 0 0 0 .5em;
     padding: 1em;
     max-height: 50vh;
   }
