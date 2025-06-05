@@ -96,6 +96,7 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 15vw;
+    margin: 1vw 0;
     aspect-ratio: 1/1;
     color: colors.$black;
     background-color: colors.$blueLight;
@@ -122,9 +123,12 @@ p {
     transform: rotate(-180deg);
   }
   dd {
-    margin: 1vw;
+    // margin: 1vw;
+    position: absolute;
+    transform: translateX(-7.25vw);
+    width: 30vw;
     border-radius: $borderRadius;
-    transform: translateY(-1vh);
+    // transform: translateY(-1vh);
     color: colors.$black;
     background-color: colors.$white;
     font-size: 1vw;
@@ -132,6 +136,16 @@ p {
     padding: 0;
     overflow: hidden;
     transition: padding 0.3s ease, max-height 0.3s ease;
+    p {
+      font-weight: 500;
+      span {
+        color: colors.$blueDark;
+        font-weight: 700;
+        font-size: 1.2em;
+        text-decoration: underline .1em dotted;
+      }
+      margin: .5em;
+    }
   }
   dd.open {
     padding: 1em;
