@@ -39,12 +39,12 @@ p {
   margin-top: 15vh;
   background: colors.$blueLight;
   color: colors.$blueDark;
-  transform: skewY(3deg);
+  transform: skewY(3deg) translateY(6vh);
   // padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5vw;
+  height: 6vw;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -81,7 +81,7 @@ p {
   // padding-top: 1vw;
   h2 {
     font-size: 2.7vw;
-    margin: 10vh;
+    margin: 20vh 0;
     color: colors.$blueLight;
     @include textShadow;
   }
@@ -90,6 +90,7 @@ p {
   width: 80%;
   @include sectionBasicFlex($justify: space-evenly, $align: flex-start);
   flex-wrap: wrap;
+  margin-bottom: 10vh;
   dt {
     display: flex;
     flex-direction: column;
