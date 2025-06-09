@@ -21,3 +21,6 @@ $borderRadius: 1vw;
 @mixin textShadow($color: colors.$black) {
   text-shadow: $color .05em .1em;
 }
+@mixin textShadowTitle($color: colors.$black, $x: .05em, $y:.05em) {
+  text-shadow: $color $x $y;
+}

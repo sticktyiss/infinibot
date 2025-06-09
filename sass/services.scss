@@ -24,6 +24,7 @@ p {
     color: colors.$black;
     font-size: 3vw;
     margin-bottom: 10vh;
+    @include textShadowTitle(colors.$blueLight);
   }
   p {
     background-color: colors.$black;
@@ -173,5 +174,12 @@ p {
     font-size: 2.5vw;
     color: colors.$white;
     @include textShadow($color: colors.$blueDark);
+  }
+  p {
+    margin: 2vh 0vw;
+    font-size: 1.5vw;
+    color: colors.$white;
+    @include textShadow($color: colors.$blueDark);
+    font-weight:500;
   }
 }

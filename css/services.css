@@ -116,6 +116,7 @@ p {
   color: #3F403F;
   font-size: 3vw;
   margin-bottom: 10vh;
+  text-shadow: #5CF1FF 0.05em 0.05em;
 }
 .intro p {
   background-color: #3F403F;
@@ -270,6 +271,13 @@ p {
   font-size: 2.5vw;
   color: #F7F2F3;
   text-shadow: #00707A 0.05em 0.1em;
+}
+#keyBenefits p {
+  margin: 2vh 0vw;
+  font-size: 1.5vw;
+  color: #F7F2F3;
+  text-shadow: #00707A 0.05em 0.1em;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=services.css.map */
